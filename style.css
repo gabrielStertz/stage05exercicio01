@@ -1,0 +1,103 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  font-size: 62.5%;
+  --ff-button-text: 'DM Sans', sans-serif;
+  --ff-heading-box1: 'Montserrat', sans-serif;
+  --bg-body: linear-gradient(287.56deg, #C2E9FB 0%, #A1C4FD 100%);
+  --bg-card: hsl(0, 0%, 100%);
+  --bg-input: hsl(212, 23%, 89%);
+  --bg-button: #7879F1;
+  --tc-heading-2: hsl(238, 27%, 28%);
+  --tc-heading-1: hsl(240, 27%, 28%);
+  --tc-text-1: hsla(238, 27%, 28%, 0.8);
+  --tc-button: hsl(0, 0%, 100%);
+  --fs-heading: 2.4rem;
+  --lh-heading-1: 2.93rem;
+  --lh-heading-2: 3.6rem;
+  --lh-button: 2.1rem;
+}
+body{
+  height: 100vh;
+  background: var(--bg-body);
+  display: grid;
+  place-items: center;
+}
+#card1, #card2{
+  margin-top: -12rem;
+  position: absolute;
+  background: var(--bg-card);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 4.8rem 6.4rem 6.4rem;
+  border-radius: .6rem;
+}
+.hide{
+  opacity: 0;
+  z-index: -1;
+}
+
+#card1 #text{
+  margin-bottom: 4.8rem;
+}
+#card1 #text h1{
+  font-family: var(--ff-heading-box1);
+  font-size: var(--fs-heading);
+  line-height: var(--lh-heading-1);
+  font-weight: 600;
+  color: var(--tc-heading-1);
+  margin-bottom: 1.6rem;
+}
+#card1 #text p{
+  font-family: var(--ff-button-text);
+  color: var(--tc-text-1);
+}
+input{
+  height: 5.3rem;
+  border: none;
+  margin: 0;
+}
+#button{
+  display: flex;
+  justify-content: center;
+}
+#card1 #guess{
+  width: 4.3rem;
+  background: var(--bg-input);
+  border-radius: .4rem 0 0 .4rem;
+  padding: 1.6rem;
+  
+}
+.button{
+  padding: 1.6rem;
+  background: var(--bg-button);
+  color: var(--tc-button);
+  font-family: var(--ff-button-text);
+  font-weight: 700;
+  line-height: var(--lh-button);
+}
+#card1 .button{
+  border-radius: 0 .4rem .4rem 0;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+#card2 h1{
+  color: var(--tc-heading-2);
+  font-family: var(--ff-button-text);
+  font-size: var(--fs-heading);
+  line-height: var(--lh-heading-2);
+  margin-bottom: 3.3rem;
+}
+#card2 #reload{
+  border-radius: 4px;
+}
